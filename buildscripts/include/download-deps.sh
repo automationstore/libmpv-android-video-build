@@ -61,6 +61,6 @@ HEREDOC
 [ ! -d media-kit-android-helper ] && git clone --depth 1 --branch fix/no-dup-fd https://github.com/media-kit/media-kit-android-helper.git
 
 # media_kit
-[ ! -d media_kit ] && git clone --depth 1 --single-branch --branch main https://github.com/alexmercerind/media_kit.git
+[ ! -d media_kit ] && git clone --depth 1 --single-branch --branch https://github.com/media-kit/media-kit
 
 cd ..

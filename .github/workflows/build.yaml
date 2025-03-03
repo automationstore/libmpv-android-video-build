@@ -35,13 +35,13 @@ jobs:
       #   with:
       #     distribution: temurin
       #     java-version: 11
-      # - name: Gradle Build Action
-      #   uses: gradle/gradle-build-action@v2.3.3
-      # - name: Cache
-      #   uses: actions/cache@v4.2.2
-      #   with:
-      #     path: /usr/local/lib/android/sdk/ndk/${{ env.NDK_VER }}
-      #     key: ${{ runner.os }}-${{ env.NDK_VER }}
+      - name: Gradle Build Action
+        uses: gradle/gradle-build-action@v2.3.3
+      - name: Cache
+        uses: actions/cache@v4.2.2
+        with:
+          path: /usr/local/lib/android/sdk/ndk/${{ env.NDK_VER }}
+          key: ${{ runner.os }}-${{ env.NDK_VER }}
       # - name: Symlink SDK
       #   working-directory: ./buildscripts
       #   run: |
