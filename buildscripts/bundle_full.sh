@@ -38,7 +38,7 @@ ln -sf "$(pwd)/app/build/outputs/apk/release/lib/x86_64/libmediakitandroidhelper
 cd ../..
 
 # --------------------------------------------------
-
+mkdir -p deps/media_kit/media_kit_native_event_loop
 cd deps/media_kit/media_kit_native_event_loop
 
 flutter create --org general_developer.library.media_universe.media_universe_flutter --template plugin_ffi --platforms=android .
